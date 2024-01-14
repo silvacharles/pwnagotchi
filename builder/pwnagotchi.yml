@@ -229,8 +229,9 @@
 
   - name: clone pwnagotchi repository
     git:
-      repo: https://github.com/evilsocket/pwnagotchi.git
+      repo: https://github.com/silvacharles/pwnagotchi.git
       dest: /usr/local/src/pwnagotchi
+      version: dev
     register: pwnagotchigit
 
   - name: create /usr/local/share/pwnagotchi/ folder
