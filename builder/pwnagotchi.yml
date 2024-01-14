@@ -47,12 +47,17 @@
           - firmware-libertas
           - firmware-misc-nonfree
           - firmware-realtek
+          - bluez
         remove:
           - raspberrypi-net-mods
           - dhcpcd5
           - triggerhappy
           - wpa_supplicant
           - nfs-common
+          - libraspberrypi0
+          - libraspberrypi-dev
+          - libraspberrypi-doc
+          - libraspberrypi-bin
         install:
           - rsync
           - vim
