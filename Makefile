@@ -1,6 +1,6 @@
 PACKER_VERSION=1.7.2
 PWN_HOSTNAME=pwnagotchi
-PWN_VERSION=v1.5.6-dev
+PWN_VERSION=1.5.6-dev
 
 all: clean install image
 
@@ -14,8 +14,8 @@ install:
 	curl https://releases.hashicorp.com/packer/$(PACKER_VERSION)/packer_$(PACKER_VERSION)_linux_amd64.zip -o /tmp/packer.zip
 	unzip /tmp/packer.zip -d /tmp
 	sudo mv /tmp/packer /usr/bin/packer
-        git clone https://github.com/solo-io/packer-plugin-arm-image /tmp/packer-plugin-arm-image
-	cd /tmp/packer-builder-arm-image && go get -d ./... && go build
+    git clone https://github.com/solo-io/packer-plugin-arm-image /tmp/packer-plugin-arm-image
+	cd /tmp/packer-plugin-arm-image && go get -d ./... && go build
 	sudo cp /tmp/packer-plugin-arm-image/packer-plugin-arm-image /usr/bin
 
 image:
