@@ -1,0 +1,14 @@
+#### API Pessoa Fingerprint
+GET https://api.pwnagotchi.ai/api/v1/unit/7998da02a8a6d6943a096c0e75068c64e336cafa36006c0cbc1f234a3957f0ff
+
+### API Registrados
+GET https://api.pwnagotchi.ai/api/v1/units/?p=1375
+
+### Meus dados
+GET https://api.pwnagotchi.ai/api/v1/unit/107df035ccb23b14a5e3c6dd062ffd62b97e8e19eaedb75f8938ea6c8c6f734c
+
+### Paises
+GET https://api.pwnagotchi.ai/api/v1/units/by_country
+
+### Inbox
+GET https://api.pwnagotchi.ai/api/v1/units
